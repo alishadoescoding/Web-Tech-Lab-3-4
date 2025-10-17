@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Selectors Page</title>
+  <style>
+
+
+    /* 🌷 Step 2: Basic selectors */
+    body { 
+      background-color: #ffeef8; 
+      font-family:'Times New Roman', Times, serif; 
+      color: #555; 
+    } /* element selector */
+
+    #main-title {
+      color: #d17baf; 
+      text-align: center;
+    } /* id selector */
+
+    .box {
+      background-color: #f9d9eb; 
+      padding: 10px;
+      border-radius: 10px;
+    } /* class selector */
+
+    * { 
+      margin: 5px; 
+    } /* universal selector */
+
+    h1, h2 {
+      font-style: italic;
+    } /* group selector */
+
+    /* 🌼 Step 3: Attribute selectors */
+    input[type="text"] { border: 2px solid #ffb6c1; }
+    a[href^="https"] { color: #94c9a9; }
+    [title~="info"] { border-bottom: 2px dotted #e0aaff; }
+
+    /* 🌸 Step 4: Combinators */
+    div p { color: #a36f9f; }     /* descendant */
+    ul > li { color: #c37b89; }   /* child */
+    h2 + p { color: #8b6ba8; }    /* adjacent sibling */
+    h2 ~ p { font-size: 14px; }   /* general sibling */
+
+    /* 💕 Step 5: Pseudo-classes */
+    a:hover { color: #ff66b3; }
+    li:first-child { font-weight: bold; }
+    li:last-child { text-decoration: underline; }
+    li:nth-child(2) { color: #7d82b8; }
+    input:focus { background-color: #fff0f5; }
+
+    /* ✨ Step 6: Pseudo-elements */
+    h1::before { content: "!"; }
+    h1::after { content: "!"; }
+  </style>
+</head>
+<body>
+
+  <h1 id="main-title">CSS Selectors Page</h1>
+
+  <div class="box">
+    <h2>About This Page</h2>
+    <p>This is the first paragraph after the heading!</p>
+    <p>This is another paragraph inside a cute pink box.</p>
+  </div>
+
+  <ul>
+    <li>First Item</li>
+    <li>Second Item</li>
+    <li>Third Item</li>
+  </ul>
+
+  <p title="extra info">This paragraph has a title attribute for the attribute selector.</p>
+
+  <p>Visit <a href="https://pinterest.com">Pinterest 💗</a> for more cute ideas!</p>
+
+  <form>
+    <label>Name:</label><br>
+    <input type="text" placeholder="Type here"><br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

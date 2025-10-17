@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Menu Styling</title>
+  <style>
+    body {
+      background-color: #fff5fa;
+      font-family: 'Poppins', sans-serif;
+      color: #444;
+      margin: 0;
+    }
+
+    header {
+      background-color: #f9d9eb;
+      padding: 15px 0;
+      box-shadow: 0 2px 8px #f0cbe1;
+    }
+
+    /* Horizontal Navigation */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      color: #7d5a91;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #f3cce5;
+      border-radius: 6px;
+    }
+
+    nav ul li a.active {
+      background-color: #d6a8d3;
+      color: white;
+      border-radius: 6px;
+    }
+
+    /* Dropdown Menu */
+    nav ul ul {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background-color: #fde6f0;
+      display: none;
+      flex-direction: column;
+      border-radius: 8px;
+      box-shadow: 2px 2px 8px #e7c7dc;
+    }
+
+    nav ul li:hover ul {
+      display: flex;
+    }
+
+    nav ul ul li a {
+      padding: 8px 16px;
+      color: #8a5b9e;
+    }
+
+    nav ul ul li a:hover {
+      background-color: #f3cce5;
+    }
+
+    /* Vertical Navigation Example */
+    .vertical {
+      width: 180px;
+      background-color: #fce6f3;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 6px #f0cbe1;
+      margin: 40px auto;
+    }
+
+    .vertical a {
+      display: block;
+      color: #8c5a93;
+      padding: 8px 12px;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .vertical a:hover {
+      background-color: #f3cce5;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a>
+          <ul>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Mission</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2 style="text-align:left; color:#a06b9a; margin-top:40px;">Vertical Navigation Example</h2>
+
+  <div class="vertical" style="float: left;">
+    <a href="#">Dashboard</a>
+    <a href="#">Profile</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+  </div>
+
+</body>
+</html>

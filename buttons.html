@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Button Styling Collection</title>
+  <style>
+    body {
+      background-color: #fff5fa;
+      font-family: 'Poppins', sans-serif;
+      color: #444;
+      text-align: center;
+      margin: 40px;
+    }
+
+    h1 {
+      color: #a06b9a;
+      text-shadow: 1px 1px 3px #f3cce5;
+    }
+
+    /* Basic button style */
+    button {
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    /* Different sizes */
+    .small { font-size: 12px; padding: 6px 12px; }
+    .medium { font-size: 16px; padding: 10px 20px; }
+    .large { font-size: 20px; padding: 14px 26px; }
+
+    /* Different colors */
+    .pink { background-color: #f3aac7; }
+    .lavender { background-color: #cbb3f3; }
+    .mint { background-color: #b8e1c6; }
+    .peach { background-color: #f9c1b6; }
+
+    /* Hover and focus effects */
+    button:hover {
+      opacity: 0.85;
+      transform: scale(1.05);
+    }
+
+    button:focus {
+      outline: 3px solid #f3cce5;
+    }
+
+    /* Rounded shapes */
+    .round { border-radius: 30px; }
+
+    /* Gradient buttons */
+    .gradient {
+      background: linear-gradient(to right, #f9c1b6, #f7a1d1);
+    }
+
+    /* Disabled state */
+    .disabled {
+      background-color: #ddd;
+      color: #888;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Button Styling Collection</h1>
+
+  <div>
+    <button class="small pink">Small Pink</button>
+    <button class="medium lavender">Medium Lavender</button>
+    <button class="large mint">Large Mint</button>
+  </div>
+
+  <div>
+    <button class="medium peach round">Rounded Peach</button>
+    <button class="medium gradient">Gradient Button</button>
+    <button class="medium pink disabled" disabled>Disabled</button>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Styling Portfolio</title>
+  <style>
+    body {
+      background-color: #fff5fa;
+      font-family: 'Poppins', sans-serif;
+      color: #444;
+      text-align: center;
+      margin: 40px;
+    }
+
+    h1 {
+      color: #a06b9a;
+      text-shadow: 1px 1px 3px #f3cce5;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      margin: 15px;
+      transition: 0.4s;
+    }
+
+    /* Rounded corners */
+    .rounded {
+      border-radius: 15px;
+    }
+
+    /* Circular image */
+    .circle {
+      border-radius: 50%;
+    }
+
+    /* Border and shadow */
+    .bordered {
+      border: 3px solid #f3cce5;
+      box-shadow: 4px 4px 10px #e9cde3;
+    }
+
+    /* Hover effect */
+    img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+
+    /* Filter example */
+    .filter {
+      filter: grayscale(60%);
+    }
+
+    /* Overlay container */
+    .overlay-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    .overlay-container img {
+      display: block;
+      border-radius: 10px;
+    }
+
+    .overlay-text {
+      position: absolute;
+      bottom: 0;
+      background: rgba(255, 220, 240, 0.8);
+      width: 100%;
+      color: #a06b9a;
+      padding: 5px;
+      font-size: 14px;
+      border-radius: 0 0 10px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Image Styling Portfolio</h1>
+
+  <div>
+    <img src="cuteflowers.png" class="rounded" alt="Rounded image">
+    <img src="cuteflowers.png" class="circle" alt="Circular image">
+    <img src="cuteflowers.png" class="bordered" alt="Bordered image">
+    <img src="cuteflowers.png" class="filter" alt="Filtered image">
+  </div>
+
+  <div class="overlay-container">
+    <img src="cuteflowers.png" alt="Overlay image">
+    <div class="overlay-text">Pastel Overlay Example</div>
+  </div>
+
+</body>
+</html>

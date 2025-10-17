@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Background Gallery</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff5fa;
+      margin: 40px;
+      color: #444;
+      text-align: center;
+    }
+
+    h1 {
+      color: #a06b9a;
+      text-shadow: 1px 1px 3px #f3cce5;
+    }
+
+    /* Solid background */
+    .solid {
+      background-color: #f7cfe0;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Image background */
+    .image-bg {
+      background-image: url('cuteflowers.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 40px;
+      border-radius: 10px;
+    }
+
+    /* Linear gradient */
+    .linear {
+      background: linear-gradient(to right, #f9d9eb, #d8c7f7);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Radial gradient */
+    .radial {
+      background: radial-gradient(circle, #ffe0ef, #e0bdf7);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* Multiple backgrounds */
+    .multi {
+      background:
+        url('https://i.pinimg.com/736x/f0/ed/d2/f0edd2d2267986e6a55b90c7fa196f21.jpg') no-repeat center,
+        linear-gradient(#fbe5f0, #e2c8f9);
+      background-size: cover;
+      padding: 40px;
+      border-radius: 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Background Gallery</h1>
+
+  <div class="solid">
+    <p>Solid pastel background color</p>
+  </div>
+
+  <div class="image-bg">
+    <p>Background image example</p>
+  </div>
+
+  <div class="linear">
+    <p>Linear gradient background</p>
+  </div>
+
+  <div class="radial">
+    <p>Radial gradient background</p>
+  </div>
+
+  <div class="multi">
+    <p>Multiple layered backgrounds</p>
+  </div>
+
+</body>
+</html>
